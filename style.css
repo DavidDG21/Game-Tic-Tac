@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Rubik+Iso&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        font-family: 'Rubik Distressed', cursive;
+    }
+    .cabezera{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .cabezera div p{
+        grid-column: 1/2;
+        grid-row:1/2 ;
+        font-family:'Rubik Iso', cursive;
+    }
+    .cabezera h1{
+        font-size: 2rem;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-family: 'Rubik Distressed', cursive;
+    }
+    .cabezera div{
+        /* grid-column: 3/4; */
+        /* grid-row: 2/; */
+    }
+
+    .container{
+        width: 15rem;
+        height: 15rem;
+        margin: 4rem auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        align-content: center;
+        justify-items: center;
+    }
+    .box{
+        width: 5rem;
+        height: 5rem;
+        text-align: center;
+    }
+    .box5{
+        border: 0.5rem solid magenta;
+    }
+    .box2, .box8{
+        border-right: 0.5rem solid magenta;            
+        border-left: 0.5rem solid magenta;            
+    }
+    .box4, .box6{
+        border-top: 0.5rem solid magenta;            
+        border-bottom: 0.5rem solid magenta;            
+    }
+    .marca{
+        height: 5rem;
+        width: 5rem;
+        font-size: 4rem;
+    }
+
+    .buttonReset{
+        margin: 4rem auto;
+        padding: 1rem;
+        border: none;
+        border-radius: 1rem;
+        font-weight: bold;
+        color: white;
+        background-color: blueviolet;
+    }
+    .buttonReset:hover{
+        transform: scale(1.2);
+    }
+    
+    /* clase alert de js */
+    .win_tie, .alert{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .alert{
+        border-radius:2rem ;
+        width: 10rem;
+        height: 5rem;
+        background-color: violet;
+    }
+
+    .background{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(238, 130, 238, 0.5);
+    }
+
+
